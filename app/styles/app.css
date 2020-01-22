@@ -1,0 +1,239 @@
+body
+{
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	margin: 0 0; 
+	padding: 0 10%; 
+}
+
+header {
+	padding: 2.5%; 
+}
+header svg {
+	float: right; 
+}
+svg {
+	display: none; 
+}
+#logo {	
+	width: 150px; 
+	padding: 0.5%; 
+	float: left; 
+}
+#logo img {
+	width: 100%; 
+	display: inline-block; 
+}
+nav {
+	display: inline-block; 
+	width: 75%; 
+	padding-top: 7.5%; 
+	text-align: right; 
+}
+nav a {
+	display: inline-block; 
+	color:  #49528e; 
+	font-size: 18px;
+	margin: 0 0.25%; 
+}
+nav a:hover {
+	color: black; 
+}
+
+a {
+	text-decoration: none;
+}
+
+.headerBanner img {
+	width: 100%; 
+}
+
+/*
+.headerBannerContent {
+	color: white;
+	padding: 0 15%; 
+	padding-bottom: 20%;
+}
+.headerBannerContent h1:first-child {
+	text-transform: uppercase;
+	font-size: 28px; 
+}
+.headerBannerContent h2:nth-child { 
+	font-size: 20px; 
+}
+*/
+
+/*
+.headerBannerMemberSignUp {
+	display: inline-block;
+	width: 350px; 
+	height: 350px; 
+	border: 2px solid#464c8a; 
+	border-radius: 10%; 
+	background-color: black;
+	color: white;
+	margin: 5% 2%; 
+}
+.headerBannerMemberSignUp div:first-child {
+	border-bottom: 2px solid purple;
+	font-size: 18px;
+	font-weight: bold; 
+	text-align: center;   
+}
+.headerBannerMambermemberSignUp form
+{
+	background-color: black;
+	color: white;
+}
+.headerBannerMemberForm input {
+	width: 100%; 
+}
+.headerBannerMemberForm button
+{
+	width: 100%; 
+	margin-top: 0.5%; 
+	color: white;
+	background-color: #9394a1;  
+} 
+*/
+
+.upComingShows {
+	color: white; 
+	background-color: black;
+	padding: 5% 0; 
+}
+
+.newsletter
+{
+	color: white;
+	background-color: #464c8a;	
+	text-align: center; 
+	padding: 5% 10%; 
+}
+.newsletterContent 
+{
+	color: white;
+	padding: 0 2.5%; 
+}
+.newsletterForm
+{
+	display: flex; 
+	flex-wrap: nowrap; 
+	padding: 0.25% 15%; 
+}
+.newsletterForm input 
+{
+	width: 100%; 
+	padding: 0 0.25%; 
+	margin: 0 0.25%; 
+}
+.newsletterForm button
+{
+	padding: 0 0.25%; 
+	margin: 0 0.25%; 
+	text-align: center; 
+}
+
+.tourDates
+{
+	height: 700px; 
+	text-align: center; 
+	background-color: lightgoldenrodyellow;
+	padding: 0.5% 0%; 
+	border: 3px solid#464c8a; 
+}
+.tourDates > div
+{
+	border-bottom: 2px solid#464c8a; 
+}
+
+.homeAbout
+{
+	display: flex;
+	flex-wrap: nowrap;  
+	background-color: #464c8a;
+	padding: 2.5% 12.5%;  
+
+}
+.homeAbout > div
+{
+	width: 100%;
+}
+.homeAboutContent {
+	color: white; 
+	font-size: 32px;
+	padding: 2.5% 0;  
+}
+.homeAboutImage 
+{
+	padding: 0.5% 0%; 
+
+}
+.homeAboutImage img
+{
+	width: 350px; 
+	float: right; 
+}
+.homePress {
+	height: 800px; 	
+	text-align: center; 
+	border: 2px solid #464c8a; 
+	margin-top: 1% 0; 
+}
+.homePressContent {
+	height: 400px;
+}
+.featuredStories {
+	display: flex;
+	flex-wrap: nowrap; 
+	background-color: white;  
+}
+.featuredStories li {
+	width: 100%; 
+	height: 400px;
+	text-decoration-style: none; 
+	margin: 0 1%;
+}
+.fsImage {
+	width: 100%; 
+	height: 200px; 
+}
+.jBaseArticle1 {
+	background-image: url('../images/jambase_jmb_melvin-seals.jpg'); 
+}
+.nyTimesArticle {
+	background-image: url('../images/lmnr_jmb-w-hartswick.jpg'); 
+}
+.lMnRArticle {
+	background-image: url('../images/gratefulweb_jmb_article.jpg'); 
+}
+
+.fsContent {
+	width: 100%; 
+	height: 100px; 
+}
+
+.footer {
+	height: 100px; 
+	background-color: black;
+}
+
+/* Media Queries */ 
+@media only screen 
+and (max-width: 800px) {
+	body {
+		margin: 0; 
+		padding: 0 10%;
+	}
+	header svg {
+		display: inline-block;
+		padding-top: 7.5%; 
+	}
+	#logo {
+		max-width: 59px;
+		display: inline-block; 
+		padding: 0.5%;
+	}
+	nav {
+		display: none; 
+	}
+}
