@@ -35,7 +35,7 @@ nav a {
 	font-size: 18px;
 	margin: 0 0.25%; 
 }
-nav a:hover {
+nav, button, a:hover {
 	color: black; 
 }
 
@@ -99,18 +99,71 @@ a {
 } 
 */
 
+
+
+/* Tour Dates ///////////////////////////////////////////////////////// */ 
 #tour-dates {
 	width: 100%;
 	color: #464c8a;
 	padding: 0.5% 0%; 
-	border: 3px solid#464c8a; 
-	border-radius: 3%;
+	border: 2px solid#464c8a; 
+	border-radius: 1%;
 }
 #tour-dates h1 {
 	border-bottom: 2px solid#464c8a; 
 	border-radius: 2%;
 	text-align: center;
 }
+
+.bit-nav-bar {
+	font-weight: bold;
+}
+.purchase-info {
+	display: inline-block; 
+}
+.date-block  {
+	display: block; 
+	background-color: #49528e;
+	float: left; 
+	font-size: 10px;
+	height: 59px; 
+	line-height: 16px; 
+	margin-right: 12px; 
+	margin-left: 3px; 
+	padding: 1px 1px 1px 1px; 
+	text-align: center;
+	text-transform: uppercase;
+	width: 60px; 
+} .date-block a {
+	color: white; 
+}  .date-block-num {
+	font-family: "function_pro_bookbold", Arial, sans-serif;
+	font-size: 20px;
+	white-space: nowrap;
+	padding: 2px;
+	margin: 4px 0; 
+	} @media (min-width: 768px) {
+	  .date-block-num {
+		font-size: 42px; 
+	} 
+}
+.purchase-actions {
+	float: right; 
+}
+a:hover .purchase-actions {
+	color: #a4aaae; 
+	text-decoration: none;
+}
+
+.pcl-grey {
+	color: #a4aaae; 
+}
+
+
+
+
+
+
 
 .upComingShows {
 	color: white; 
