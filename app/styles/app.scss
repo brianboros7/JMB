@@ -1,36 +1,36 @@
-body
-{
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
-	margin: 0 0; 
-	padding: 0 10%; 
+@import "ember-bootstrap/bootstrap"; 
+
+.container { 
+	width: 960px; 
+	margin-left: auto;
+	margin-right: auto; 
+}
+a {
+	text-decoration: none;
 }
 
 header {
-	padding: 2.5%; 
-}
-header svg {
-	float: right; 
+    display: flex; 
+	padding: 2px 2px; 
 }
 svg {
 	display: none; 
 }
 #logo {	
+	display: inline-flex; 
 	width: 150px; 
-	padding: 0.5% 2.5%; 
-	float: left; 
+	padding: 10px; 
 }
 #logo img {
 	width: 100%; 
-	display: inline-block; 
 }
 nav {
-	display: inline-block; 
-	width: 75%; 
-	padding-top: 7.5%; 
-	text-align: right; 
+    width: 100%; 
+    flex-grow: 1; 
+    text-align: right; 
+    padding-top: 68px; 
 }
 nav a {
-	display: inline-block; 
 	color:  #49528e; 
 	font-size: 18px;
 	margin: 0 0.25%; 
@@ -39,12 +39,8 @@ nav, button, a:hover {
 	color: black; 
 }
 
-a {
-	text-decoration: none;
-}
-
 .headerBanner {
-	padding: 1%; 
+	padding: 1px; 
 }
 .headerBanner img {
 	width: 100%; 
@@ -99,71 +95,96 @@ a {
 } 
 */
 
-
-
-/* Tour Dates ///////////////////////////////////////////////////////// */ 
-#tour-dates {
-	width: 100%;
-	color: #464c8a;
-	padding: 0.5% 0%; 
-	border: 2px solid#464c8a; 
-	border-radius: 1%;
-}
-#tour-dates h1 {
-	border-bottom: 2px solid#464c8a; 
-	border-radius: 2%;
-	text-align: center;
-}
-
-.bit-nav-bar {
-	font-weight: bold;
-}
-.purchase-info {
-	display: inline-block; 
-}
-.date-block  {
+/* Tour Date Homepage */
+#tour-date-home {
 	display: block; 
+	color: #464c8a;
+}
+#tour-date-home h1 {
+	text-align: center;
+	background-color: white;
+	padding: 2px; 
+}
+.row {
+	background-color: lightgrey;
+	border: 1px solid #49528e; 
+}
+/* Tour Dates Shows Page///////////////////////////////////////////////////////// */ 
+
+.purchase-entry {
+	display: flex;
+	width: 100%;
+	padding: 4px 4px; 
+	background-color: white; 
+	margin: 2px; 
+}
+
+.date-block  {
 	background-color: #49528e;
-	float: left; 
 	font-size: 10px;
 	height: 59px; 
 	line-height: 16px; 
+	margin-left: 2px; 
 	margin-right: 12px; 
-	margin-left: 3px; 
-	padding: 1px 1px 1px 1px; 
+	padding: 1px 6px; 
 	text-align: center;
 	text-transform: uppercase;
 	width: 60px; 
-} .date-block a {
+}   .date-block a {
 	color: white; 
-}  .date-block-num {
-	font-family: "function_pro_bookbold", Arial, sans-serif;
-	font-size: 20px;
-	white-space: nowrap;
-	padding: 2px;
-	margin: 4px 0; 
-	} @media (min-width: 768px) {
-	  .date-block-num {
-		font-size: 42px; 
-	} 
+    } 
+    .date-block-num {
+	    font-family: "function_pro_bookbold", Arial, sans-serif;
+	    font-size: 20px;
+	    white-space: nowrap;
+        padding: 2px;
+        margin: 4px 0; 
+    } @media only screen
+        and (min-width: 768px) {
+	    .date-block-num {
+		    font-size: 42px; 
+	    } 
+    }
+
+.purchase-info {
+	display: flex; 
+	width: 100%;
 }
+
+.purchase-details {
+	flex-grow: 1;
+	vertical-align: top; 
+	padding: 2px 2px; 
+}
+
 .purchase-actions {
-	float: right; 
+	flex-grow: 4;
+	text-align: right;
+	padding: 5px 40px;  
 }
-a:hover .purchase-actions {
-	color: #a4aaae; 
-	text-decoration: none;
+.ticket-btn { 
+	background-color: #464c8a;
+	margin-left: 12px; 
+}
+.ticket-btn:hover {
+	background-color: #837676;
+}
+.ticket-btn-text  {
+	color: white;
+	font-size: 14px;
+	text-transform: uppercase; 
 }
 
-.pcl-grey {
-	color: #a4aaae; 
+.block-entry-title .pcl-color {
+	color:  grey; 
+}
+.block-entry-title a:hover {
+	color: #49528e; 
 }
 
-
-
-
-
-
+.pcl-purple {
+	color: #464c8a; 
+}
 
 .upComingShows {
 	color: white; 
@@ -197,15 +218,13 @@ a:hover .purchase-actions {
 	text-align: center; 
 }
 
+/* HOme about and featured stories
 
-
-.homeAbout
-{
+.homeAbout {
 	display: flex;
 	flex-wrap: nowrap;  
 	background-color: #464c8a;
 	padding: 2.5% 12.5%;  
-
 }
 .homeAbout > div {
 	width: 100%;
@@ -215,13 +234,10 @@ a:hover .purchase-actions {
 	font-size: 32px;
 	padding: 2.5% 0;  
 }
-.homeAboutImage 
-{
+.homeAboutImage  {
 	padding: 0.5% 0%; 
-
 }
-.homeAboutImage img
-{
+.homeAboutImage img {
 	width: 350px; 
 	float: right; 
 }
@@ -263,6 +279,23 @@ a:hover .purchase-actions {
 	width: 100%; 
 	height: 100px; 
 }
+End of home about and featured stories */ 
+
+/* Band Story Page */ 
+.band-story {
+	color: #49528e; 
+	padding: 4px; 
+}
+.band-story img {
+	display: inline-block; 
+	width: 350px; 
+	float: left; 
+}
+.band-history {
+	display: inline-block; 
+	padding: 4px; 
+}
+
 
 .footer {
 	height: 100px; 
@@ -296,6 +329,5 @@ and (max-width: 800px) {
 	.newsletter form {
 		width: 100%;
 		text-align: left;
-	}
-
+    }
 }
