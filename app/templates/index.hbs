@@ -1,41 +1,34 @@
 <main>
     <section class="headerBanner"> 
         <img src="/images/umphrees-example.jpg" alt="Example Umphree's Banner" /> 
-        <!-- <div class="headerBannerContent"> 
-            <h1>
-                Let us show you why we're joining the stage
-                with some of the best funk soul musicians
-                in the world. 
-            </h1>
-            <h2>
-                Join our community of Funk Fans who are looking to break down  
-                the funkiest dance party you've ever seen!
-            </h2>
-        </div> --> 
-
     </section>
 
     <TourDateHome></TourDateHome>
 
-    <section class="upComingShows">
-        <div> 
-            <a class="logo" href="https://liveforlivemusic.com" /> 
+    <section class="container-latest-news">
+        <div class="latest-news"> 
+            <article class="news-article"> 
+                <a class="logo" href="https://liveforlivemusic.com" /> 
+            </article>
+            <article class="news-article"> 
+                <a class="logo" href="https://liveforlivemusic.com" /> 
+            </article>
+            <article class="news-article"> 
+            </article>
         </div>
     </section>
 
     <section class="newsletter">
         <div class="newsletterContent"> 
             <h1> Want some inside Funk secrets? </h1>
-            <h5>
+            <p>
                 Join thousands of growing Funk Fans just like you who love more news and updates!
-            </h5>
+            </p>
         </div>
-        <form class="newsletterForm"> 
-            <input type="name" name="firstname" placeholder="First Name"> 
-            <input type="name" name="email" placeholder="Email"> 
-            <button class="newsletterButton">
-                <p>subscribe</p>
-            </button>
-        </form>
+        <BsButton 
+            @type="primary"
+            @icon="glyphicon glyphicon-download"> 
+            Submit
+        </BsButton>
     </section>
 </main>      
