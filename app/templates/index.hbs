@@ -8,10 +8,10 @@
     <section class="container-latest-news">
         <div class="latest-news"> 
             <article class="news-article"> 
-                <a class="logo" href="https://liveforlivemusic.com" /> 
+                <a href="https://liveforlivemusic.com" alt="Live Nation" /> 
             </article>
             <article class="news-article"> 
-                <a class="logo" href="https://liveforlivemusic.com" /> 
+                <a  href="https://liveforlivemusic.com" alt="live music" /> 
             </article>
             <article class="news-article"> 
             </article>
@@ -25,10 +25,10 @@
                 Join thousands of growing Funk Fans just like you who love more news and updates!
             </p>
         </div>
-        <BsButton 
-            @type="primary"
-            @icon="glyphicon glyphicon-download"> 
-            Submit
-        </BsButton>
+        <div class="newsletter-btn d-flex  justify-content-center"> 
+            <BsButton class="w-25" @block={{true}}>
+                Submit
+            </BsButton>
+        </div>
     </section>
 </main>      
