@@ -156,10 +156,9 @@ nav a:hover {
 }
 
 /* Latest News Section */ 
-.container-latest-news {
-	color: white; 
-	background-color: black;
-	padding: 5% 0; 
+.news-article img {
+	width: 100%; 
+	max-width: 200px; 
 }
 
 /* Newsletter Submission Home */  
@@ -167,7 +166,6 @@ nav a:hover {
 	color: white;
 	background-color: #464c8a;	
 	text-align: center; 
-	padding: 5% 10%; 
 }
 .newsletterContent  {
 	color: white;
@@ -238,6 +236,10 @@ nav a:hover {
 }
 */ 
 
+/* Media Section */ 
+container-media-page {
+	padding: 10px; 
+}
 
 /* Footer Section */ 
 .container-footer {
@@ -250,14 +252,30 @@ nav a:hover {
 
 /* Band Story Page */ 
 .band-story {
+	width: 960px; 
+	margin: auto; 
+	padding: auto; 
 	color: #49528e; 
-	padding: 4px; 
+	border: 2px solid lightgrey; 
 }
 .band-story img {
-	display: inline-block; 
-	width: 350px; 
+	float: left; 
+	width: 300px; 
 }
 .band-history {
-	display: inline-block; 
-	padding: 4px; 
+	flex: 1 100%; 
 }
+
+/* Contact Page */ 
+.contact-page {
+	width: 960px;
+	margin: auto; 
+	padding: auto; 
+}
+.contact-content {
+	align-content: center;
+}
+.container-contact-form {
+	width: 600px;
+}
+
