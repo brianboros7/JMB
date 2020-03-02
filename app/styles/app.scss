@@ -1,10 +1,5 @@
 @import "ember-bootstrap/bootstrap"; 
 
-.container-app { 
-	width: 960px; 
-	margin-left: auto;
-	margin-right: auto; 
-}
 a {
 	text-decoration: none;
 } a:hover {
@@ -12,6 +7,9 @@ a {
 }
 
 header {
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto; 
     display: flex; 
 	border-bottom: 2px solid #49528e;
 	margin-bottom: 4px; 
@@ -42,18 +40,22 @@ nav a {
 nav a:hover {
 	color: black; 
 }
-
 .headerBanner {
 	padding: 1px; 
+}
+
+.main-section {
+	width: 960px; 
+	margin-left: auto;
+	margin-right: auto; 
 }
 .headerBanner img {
 	width: 100%; 
 }
 
 /* Tour Date Homepage */
-#tour-date-home {
+#tour-date-home { 
 	color: #464c8a;
-	margin: 2px; 
 }
 #tour-date-home h1 {
 	text-align: center;
@@ -65,6 +67,9 @@ nav a:hover {
 	border: 1px solid #49528e; 
 	padding: 2px; 
 	margin: 2px; 
+}
+.sb-link {
+	text-align: center; 
 }
 
 /* Tour Dates Shows Page   */ 
@@ -85,18 +90,18 @@ nav a:hover {
 }
 .date-block  {
 	background-color: #49528e;
-	font-size: 10px;
+	font-size: 9px;
 	height: 59px; 
 	line-height: 16px; 
 	margin-left: 2px; 
 	margin-right: 12px; 
-	padding: 1px 6px; 
+	padding: 2px 6px; 
 	text-align: center;
 	text-transform: uppercase;
 	width: 60px; 
-	border-radius: 3px;
+	border-radius: 2px;
 
-}   .date-block a {
+} .date-block a {
 	color: white; 
     } 
     .date-block-num {
@@ -156,13 +161,20 @@ nav a:hover {
 }
 
 /* Latest News Section */ 
+.container-latest-news h2 {
+	color: #49528e;
+	text-align: center;
+}
+.news-article {
+	max-width: 300px; 
+}
 .news-article img {
 	width: 100%; 
-	max-width: 200px; 
 }
 
 /* Newsletter Submission Home */  
 .newsletter {
+	width: 100%; 
 	color: white;
 	background-color: #464c8a;	
 	text-align: center; 
@@ -173,88 +185,54 @@ nav a:hover {
 }
 
 
-/* HOme about and featured stories
-
-.homeAbout {
-	display: flex;
-	flex-wrap: nowrap;  
-	background-color: #464c8a;
-	padding: 2.5% 12.5%;  
-}
-.homeAbout > div {
-	width: 100%;
+/* Home about and featured stories */
+.homeAbout {  
+	background-image: linear-gradient( to right, purple,  #464c8a, black);
 }
 .homeAboutContent {
 	color: white; 
-	font-size: 32px;
-	padding: 2.5% 0;  
 }
-.homeAboutImage  {
-	padding: 0.5% 0%; 
+.homeAboutImage {
+	max-width: 400px; 
 }
 .homeAboutImage img {
-	width: 350px; 
-	float: right; 
-}
-.homePress {
-	height: 800px; 	
-	text-align: center; 
-	border: 2px solid #464c8a; 
-	margin-top: 1% 0; 
-}
-.homePressContent {
-	height: 400px;
-}
-.featuredStories {
-	display: flex;
-	flex-wrap: nowrap; 
-	background-color: white;  
-}
-.featuredStories li {
 	width: 100%; 
-	height: 400px;
-	text-decoration-style: none; 
-	margin: 0 1%;
 }
-.fsImage {
-	width: 100%; 
-	height: 200px; 
-}
-.jBaseArticle1 {
-	background-image: url('../images/jambase_jmb_melvin-seals.jpg'); 
-}
-.nyTimesArticle {
-	background-image: url('../images/lmnr_jmb-w-hartswick.jpg'); 
-}
-.lMnRArticle {
-	background-image: url('../images/gratefulweb_jmb_article.jpg'); 
-}
-
-.fsContent {
-	width: 100%; 
-	height: 100px; 
-}
-*/ 
 
 /* Media Section */ 
-container-media-page {
-	padding: 10px; 
+.container-media-page {
+	width: 960px; 
+	margin-left: auto;
+	margin-right: auto; 
+}
+.media-article {
+	max-width: 300px; 
 }
 
 /* Footer Section */ 
 .container-footer {
+	width: 100%; 
 	background-color: darkgray;
 }
-.container-footer nav  {
+.container-footer nav {
 	text-align: center;
 	color: white; 
 }
 
+/* Shows Page */ 
+.container-shows {
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto; 
+}
+
 /* Band Story Page */ 
+.band-page {
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto; 
+}
 .band-story {
-	width: 960px; 
-	margin: auto; 
-	padding: auto; 
 	color: #49528e; 
 	border: 2px solid lightgrey; 
 }
@@ -264,6 +242,19 @@ container-media-page {
 }
 .band-history {
 	flex: 1 100%; 
+}
+.band-history p {
+	font-size: 16px; 
+}
+.story-link {
+	color: blue;
+	font-size: 18px; 
+	font-weight: bold;
+	text-decoration: underline; 
+	text-decoration-style: solid;
+}
+.story-link:hover {
+	color: darkgray; 
 }
 
 /* Contact Page */ 

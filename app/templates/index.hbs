@@ -1,81 +1,97 @@
-<main>
+<main class="main-section p-2">
     <section class="headerBanner"> 
         <img src="/images/jmb-header-banner.png" alt="JMB's list of shows header" /> 
     </section>
 
     <TourDateHome></TourDateHome>
 
-    <section class="container-latest-news d-flex bg-light p-4">
-        <div class="latest-news d-flex justify-content-center p-2"> 
-            <div class="latest-news-article d-flex-row border border-black m-1"> 
-                <article class="news-article bg-white p-2"> 
-                <figure class="article-image"> 
-                    <a href="https://livemusicnewsandreview.com/2015/02/joe-marcinek-band-hit-road-special-guest-jennifer-hartswick/ "> 
-                        <img class="w-full rounded" src="/images/lmnr-jmb-w-hartswick.jpg" alt="JMB live for live music with Jennifer Hartswick" /> 
-                    </a>
-                </figure>
-                <span> February 11, 2015 <br /> </span>
-                <header>
-                    <p class="pt-2">
-                        Joe Marcinek Hit's The road with 
-                        Special Guest Jennifer Hartswick
-                    </p>
-                </header>
-                </article>
-            </div>
-
-            <div class="latest-news-article d-flex-row border border-black m-1"> 
-                <article class="news-article bg-white p-2"> 
-                <figure class="article-image"> 
-                    <a href="https://livemusicnewsandreview.com/2015/02/joe-marcinek-band-hit-road-special-guest-jennifer-hartswick/ "> 
-                        <img class=" w-full rounded " src="/images/lmnr-jmb-w-hartswick.jpg" alt="JMB live for live music with Jennifer Hartswick" /> 
-                    </a>
-                </figure>
-                <span> February 11, 2015 <br /> </span>
-                <header>
-                    <p class="pt-2">
-                        Joe Marcinek Hit's The road with 
-                        Special Guest Jennifer Hartswick
-                    </p>
-                </header>
-                </article>
-            </div>
-
-            <div class="latest-news-article d-flex-row border border-black m-1"> 
-                <article class="news-article bg-white p-2"> 
-                <figure class="article-image"> 
-                    <a href="https://livemusicnewsandreview.com/2015/02/joe-marcinek-band-hit-road-special-guest-jennifer-hartswick/ "> 
-                        <img class="w-full float-center rounded" src="/images/lmnr-jmb-w-hartswick.jpg" alt="JMB live for live music with Jennifer Hartswick" /> 
-                    </a>
-                </figure>
-                <span> February 11, 2015 <br /> </span>
-                <header>
-                    <p class="pt-2">
-                        Joe Marcinek Hit's The road with 
-                        Special Guest Jennifer Hartswick
-                    </p>
-                </header>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <section class="newsletter p-4">
-        <div class="newsletterContent p-2"> 
-            <h1> Want some inside Funk secrets? </h1>
-            <p>
-                Join thousands of growing Funk Fans just like you who love more news and updates!
+    <section class="homeAbout d-flex p-4 my-4">
+        <div class="homeAboutContent p-4 m-4"> 
+            <p class="text-weight-bold text-uppercase p-10">
+                JMB is an ever evolving mixture of original 
+                compositions and incredible musicians. Each 
+                show has a slightly different lineup 
+                and interpretation.
             </p>
         </div>
-        <div class="newsletter-submit w-full "> 
-            <BsForm class="d-inline-flex p-2 " @formLayout="vertical" @model={{this}} as |form| > 
-                <form.element class="p-2 w-full" @controlType="email" @placeholder="Email" @property="email" @required={{true}} /> 
-                <div class="p-2 w-full ">
-                    <BsButton @block={{true}}>
-                        Submit
-                    </BsButton>
-                </div>
-            </BsForm>
+        <div class="homeAboutImage p-2"> 
+            <img src="/images/slinkcoverart.jpg" alt="Slinks first album cover art" />
         </div>
     </section>
-</main>      
+
+    <section class="container-latest-news border bg-light p-2 m-4">
+        <h2 class="p-2">Featured Stories</h2>
+        <div class="latest-news d-flex justify-content-center p-1"> 
+
+            <div class="latest-news-article d-flex-row border border-black m-1"> 
+                <article class="news-article bg-white p-2"> 
+                    <figure class="article-image"> 
+                        <a href="https://livemusicnewsandreview.com/2015/02/joe-marcinek-band-hit-road-special-guest-jennifer-hartswick/ "> 
+                            <img class="rounded" src="/images/lmnr-jmb-w-hartswick.jpg" alt="JMB live for live music with Jennifer Hartswick" /> 
+                        </a>
+                    </figure>
+                    <div class="p-2">
+                        <span> February 11, 2015 <br /> </span>
+                        <h5 class="pt-1">
+                            Joe Marcinek Hit's The road with 
+                            Special Guest Jennifer Hartswick
+                        </h5>
+                    </div>
+                </article>
+            </div>
+
+            <div class="latest-news-article d-flex-row border border-black m-1"> 
+                <article class="news-article bg-white p-2"> 
+                    <figure class="article-image"> 
+                        <a href="https://livemusicnewsandreview.com/2015/02/joe-marcinek-band-hit-road-special-guest-jennifer-hartswick/ "> 
+                            <img class="rounded " src="/images/lmnr-jmb-w-hartswick.jpg" alt="JMB live for live music with Jennifer Hartswick" /> 
+                        </a>
+                    </figure>
+                    <div class="p-2">
+                        <span> February 11, 2015 <br /> </span>
+                        <h5 class="pt-1">
+                            Joe Marcinek Hit's The road with 
+                            Special Guest Jennifer Hartswick
+                        </h5>
+                    </div>
+                </article>
+            </div>
+
+            <div class="latest-news-article d-flex-row border border-black m-1"> 
+                <article class="news-article bg-white p-2"> 
+                    <figure class="article-image"> 
+                        <a href="https://livemusicnewsandreview.com/2015/02/joe-marcinek-band-hit-road-special-guest-jennifer-hartswick/ "> 
+                            <img class="rounded" src="/images/lmnr-jmb-w-hartswick.jpg" alt="JMB live for live music with Jennifer Hartswick" /> 
+                        </a>
+                    </figure>
+                    <div class="p-2">
+                        <span> February 11, 2015 <br /> </span>
+                        <h5 class="pt-1">
+                            Joe Marcinek Hit's The road with 
+                            Special Guest Jennifer Hartswick
+                        </h5>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+</main> 
+
+<section id="newsletter" class="newsletter p-2 ">
+    <div class="newsletterContent p-1"> 
+        <h1> Want some inside Funk secrets? </h1>
+        <p>
+            Join thousands of growing Funk Fans just like you who love more news and updates!
+        </p>
+    </div>
+    <div class="newsletter-submit w-full "> 
+        <BsForm class="d-inline-flex p-2 " @formLayout="vertical" @model={{this}} as |form| > 
+            <form.element class="p-2 w-full" @controlType="email" @placeholder="Email" @property="email" @required={{true}} /> 
+            <div class="p-2 w-full ">
+                <BsButton @block={{true}}>
+                    Submit
+                </BsButton>
+            </div>
+        </BsForm>
+    </div>
+</section> 
