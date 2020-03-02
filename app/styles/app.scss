@@ -62,27 +62,14 @@ nav a:hover {
 	background-color: white;
 	padding: 2px; 
 }
-.container-purchase-entry {
-	background-color: lightgrey;
-	border: 1px solid #49528e; 
-	padding: 2px; 
-	margin: 2px; 
-}
 .sb-link {
 	text-align: center; 
 }
 
 /* Tour Dates Shows Page   */ 
-.container-tour-dates {
-	height: 500px; 
-}
-.bit-nav-bar-container {
-	padding: 2px; 
-	margin-bottom: 6px; 
-}
-
 .purchase-entry {
 	display: flex;
+	border: 1px solid #49528e; 
 	width: 100%;
 	padding: 4px 4px; 
 	background-color: white; 
