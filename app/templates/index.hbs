@@ -1,10 +1,10 @@
-<main class="main-section p-2">
+<main class="main-section">
     <section class="headerBanner"> 
         <img src="assets/images/jmb-header-banner.png" alt="JMB's list of shows header" /> 
     </section>
 
-    <section class="main-content flex">
-        <div class="w-full col-8 flex-start p-2"> 
+    <section class="main-content row p-2">
+        <div class="w-full col-8"> 
             <TourDateHome></TourDateHome>
 
             <section class="homeAbout d-flex p-2">
@@ -21,12 +21,12 @@
         </div>
             </section>
 
-            <section class="container-latest-news  w-full border bg-light p-4 ">
-        <h2 class="p-2">Featured Stories</h2>
-        <div class="latest-news d-flex justify-content-center p-1"> 
+            <section class="featured-stories  w-full border bg-light p-2 ">
+                <h2 class="p-2">Featured Stories</h2>
+                <div class="press-news d-flex justify-content-center p-2"> 
 
-            <div class="latest-news-article d-flex-row border border-black m-1"> 
-                <article class="news-article bg-white p-2"> 
+                <div class="press-story d-flex-row border border-black p-1 m-1"> 
+                    <article class="fs-article bg-white p-2"> 
                     <figure class="article-image"> 
                         <a href="https://musicfestnews.com/2019/11/joe-marcinek-dead-funk-summit-album-tour-jam-cruise-more/"> 
                             <img class="rounded" src="assets/images/jmb-musicfest-11-14-19.jpg" alt="JMB Funk Summit and JamCruise article " /> 
@@ -39,11 +39,11 @@
                             Tour, Jam Cruise & More!
                         </h5>
                     </div>
-                </article>
-            </div>
+                    </article>
+                </div>
 
-            <div class="latest-news-article d-flex-row border border-black m-1"> 
-                <article class="news-article bg-white p-2"> 
+                <div class="press-story d-flex-row border border-black p-1 m-1"> 
+                    <article class="fs-article bg-white p-2"> 
                     <figure class="article-image"> 
                         <a href="https://liveforlivemusic.com/features/joe-marcinek-jm3/"> 
                             <img class="rounded " src="assets/images/jmb-lflv-11-19-18.png" alt="JMB live for live music JM3 release article " /> 
@@ -56,11 +56,11 @@
                             ‘JM3’, Takes Listeners On Jazzy Musical Ride [Listen]
                         </h5>
                     </div>
-                </article>
-            </div>
+                    </article>
+                </div>
 
-            <div class="latest-news-article d-flex-row border border-black m-1"> 
-                <article class="news-article bg-white p-2"> 
+                <div class="press-story d-flex-row border border-black p-1 m-1"> 
+                    <article class="fs-article bg-white p-2"> 
                     <figure class="article-image"> 
                         <a href="https://www.jambase.com/article/joe-marcinek-teams-george-porter-jr-melvin-seals-eric-imbrosciano-dead-funk-summit"> 
                             <img class="rounded" src="assets/images/jmb-jambase-6-11-18.jpg" alt=" JMB with George Porter and Melvin Seals at the Dead Funk Summit " /> 
@@ -73,32 +73,18 @@
                             Melvin Seals & Eric Imbrosciano For ‘Dead Funk Summit’
                         </h5>
                     </div>
-                </article>
-            </div>
-        </div>
+                    </article>
+                </div>
+
+                </div>
             </section>
         </div>
 
-        <div class="w-full flex-end vertical-align-top col-4  bg-secondary p-2"> </div>
+        <div class="container-latest-news w-full col-4 border bg-info"> 
+            <LatestNews></LatestNews>
+        </div>
 
     </section>
 </main> 
 
-<section id="newsletter" class="newsletter p-2 ">
-    <div class="newsletterContent p-1"> 
-        <h1> Want some inside Funk secrets? </h1>
-        <p>
-            Join thousands of growing Funk Fans just like you who love more news and updates!
-        </p>
-    </div>
-    <div class="newsletter-submit w-full "> 
-        <BsForm class="d-inline-flex p-2 " @formLayout="vertical" @model={{this}} as |form| > 
-            <form.element class="p-2 w-full" @controlType="email" @placeholder="Email" @property="email" @required={{true}} /> 
-            <div class="p-2 w-full ">
-                <BsButton @block={{true}}>
-                    Submit
-                </BsButton>
-            </div>
-        </BsForm>
-    </div>
-</section> 
+

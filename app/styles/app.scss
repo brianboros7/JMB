@@ -4,11 +4,6 @@
 .container-body {
 	background-image: linear-gradient(to bottom right, black, rgb(247, 239, 239), #b6c3c5,  #49528e, white, black,);
 }
-.body-fx {
-	width: 1080px; 
-	margin-left: auto; 
-	margin-right: auto; 
-}
 
 a {
 	text-decoration: none;
@@ -19,35 +14,43 @@ a {
 header {
 	display: flex; 
 	background-color: white; 
-	padding: 4px; 
 }
 svg {
 	display: none; 
 }
-
+.navigation {
+	width: 1080px; 
+	margin-left: auto; 
+	margin-right: auto; 
+	padding: 2px; 
+}
 #logo {	
 	display: inline-flex; 
 	width: 150px; 
-	padding: 10px; 
+	padding: 2px; 
 }
 #logo img {
 	width: 100%; 
 }
 nav {
-    width: 100%; 
-    flex-grow: 1; 
-    text-align: right; 
-	padding-top: 68px; 
+	flex-grow: 1; 
+	text-align: right;
+	padding-top: 69px; 
 }
 nav a {
 	color:  #49528e; 
 	font-size: 18px;
-	margin: 0 0.25%; 
+	margin: 0 5px; 
 }
 nav a:hover {
 	color: black; 
 }	
 
+.main-section {
+	width: 1080px; 
+	margin-left: auto; 
+	margin-right: auto; 
+}
 .headerBanner img {
 	width: 100%; 
 
@@ -110,7 +113,7 @@ nav a:hover {
 .purchase-actions {
 	flex-grow: 4;
 	text-align: right;
-	padding: 5px 40px;  
+	padding: 5px 10px;  
 }
 
 .block-entry-title {
@@ -143,23 +146,25 @@ nav a:hover {
 	color: #49528e; 
 }
 
-/* Latest News Section */ 
-.container-latest-news h2 {
+/* Featured Stories Section */ 
+.featured-stories h2 {
 	color: #49528e;
 	text-align: center;
 }
-.news-article {
+.fs-article {
 	max-width: 300px; 
 }
-.news-article img {
+.fs-article img {
 	width: 100%; 
 }
 
+/* Latest News */ 
+
+
 /* Newsletter Submission Home */  
 .newsletter {
-	width: 100%; 
 	color: white;
-	background-color: #464c8a;	
+	background-image: linear-gradient(lightgray, #49528e, black,); 
 	text-align: center; 
 }
 .newsletterContent  {

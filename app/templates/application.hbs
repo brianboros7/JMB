@@ -1,15 +1,34 @@
 <div class="container-app">       
     
     <div class="container-body">
-      <div class="body-fx p-2"> 
-        <div class="m-2"> 
+      <div class="body-fx"> 
+        <div class="mb-2"> 
           <Header></Header> 
         </div>
-        <div class="main-section bg-whte p-2">
+        <div class="main-section bg-light">
           {{outlet}}
         </div>
       </div>
     </div>
+
+    <section class="newsletter w-full p-2 ">
+      <div class="newsletterContent p-1"> 
+        <h1> Want some inside Funk secrets? </h1>
+        <p>
+            Join thousands of growing Funk Fans just like you who love more news and updates!
+        </p>
+      </div>
+      <div class="newsletter-submit w-full "> 
+        <BsForm class="d-inline-flex p-2 " @formLayout="vertical" @model={{this}} as |form| > 
+            <form.element class="p-2 w-full" @controlType="email" @placeholder="Email" @property="email" @required={{true}} /> 
+            <div class="p-2 w-full ">
+                <BsButton @block={{true}}>
+                    Submit
+                </BsButton>
+            </div>
+        </BsForm>
+      </div>
+    </section> 
   
     <Footer></Footer> 
 </div>
