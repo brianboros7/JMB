@@ -1,5 +1,15 @@
 @import "ember-bootstrap/bootstrap"; 
 
+
+.container-body {
+	background-image: linear-gradient(to bottom right, black, rgb(247, 239, 239), #b6c3c5,  #49528e, white, black,);
+}
+.body-fx {
+	width: 1080px; 
+	margin-left: auto; 
+	margin-right: auto; 
+}
+
 a {
 	text-decoration: none;
 } a:hover {
@@ -7,12 +17,9 @@ a {
 }
 
 header {
-	width: 960px;
-	margin-left: auto;
-	margin-right: auto; 
-    display: flex; 
-	border-bottom: 2px solid #49528e;
-	margin-bottom: 4px; 
+	display: flex; 
+	background-color: white; 
+	padding: 4px; 
 }
 svg {
 	display: none; 
@@ -30,7 +37,7 @@ nav {
     width: 100%; 
     flex-grow: 1; 
     text-align: right; 
-    padding-top: 68px; 
+	padding-top: 68px; 
 }
 nav a {
 	color:  #49528e; 
@@ -39,28 +46,20 @@ nav a {
 }
 nav a:hover {
 	color: black; 
-}
-.headerBanner {
-	padding: 1px; 
-}
+}	
 
-.main-section {
-	width: 960px; 
-	margin-left: auto;
-	margin-right: auto; 
-}
 .headerBanner img {
 	width: 100%; 
+
 }
 
 /* Tour Date Homepage */
 #tour-date-home { 
 	color: #464c8a;
+	background-color: white;
 }
 #tour-date-home h1 {
-	text-align: center;
-	background-color: white;
-	padding: 2px; 
+	text-align: center; 
 }
 .sb-link {
 	text-align: center; 
@@ -69,11 +68,8 @@ nav a:hover {
 /* Tour Dates Shows Page   */ 
 .purchase-entry {
 	display: flex;
-	border: 1px solid #49528e; 
 	width: 100%;
-	padding: 4px 4px; 
 	background-color: white; 
-	margin: 1px; 
 }
 .date-block  {
 	background-color: #49528e;
@@ -221,6 +217,7 @@ nav a:hover {
 }
 .band-story {
 	color: #49528e; 
+	background-color: #e2dcc8;
 	border: 2px solid lightgrey; 
 }
 .band-story img {

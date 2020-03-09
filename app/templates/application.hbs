@@ -1,12 +1,15 @@
-<div class="container-app"> 
-    <Header>
-      
-    </Header>
-    <div class="main">
-      {{outlet}}
+<div class="container-app">       
+    
+    <div class="container-body">
+      <div class="body-fx p-2"> 
+        <div class="m-2"> 
+          <Header></Header> 
+        </div>
+        <div class="main-section bg-whte p-2">
+          {{outlet}}
+        </div>
+      </div>
     </div>
   
-    <Footer>
-
-    </Footer> 
+    <Footer></Footer> 
 </div>
